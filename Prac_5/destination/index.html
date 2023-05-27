@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homesmart</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/fav2.png" type="image/x-icon">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- cdn phosphor icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+    <!-- js file -->
+    <script src="./script.js" defer></script>
+
+
+</head>
+
+<body class="
+max-w-[2000px]
+mx-auto
+text-neutral-900
+dark:text-neutral-200
+bg-white
+dark:bg-neutral-900
+">
+
+    <!-- nav start -->
+    <nav class="mx-auto bg-amber-400 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+
+            <!-- insert logo -->
+            <a class="
+            focus:outline-none
+            focus-visible:ring-4
+            ring-neutral-900
+            rounded-sm
+            ring-offset-4
+            ring-offset-amber-400
+            lg:absolute
+            lg:left-1/2
+            lg:-translate-x-1/2
+            lg:top-9
+            z-50
+            hover:opacity-75
+            transition-opacity
+            " aria-label="Go to homepage" href="#">
+                <img src="./img/logo.svg" width="200" class="w-48 md:w-64 lg:w-72 " alt="logo">
+            </a>
+            <!-- logo end  -->
+
+            <!-- list button start  -->
+            <button id="list" class="lg:hidden text-2xl focus:outline-none
+            focus-visible:ring-4
+            ring-neutral-900
+            rounded-sm
+            ring-offset-4
+            ring-offset-amber-400
+            text-neutral-900
+            hover:text-neutral-600
+            transition-colors"><i class="ph-bold ph-list"></i></button>
+            <!-- list button end  -->
+
+            <!-- menubar list start  -->
+            <div role="menubar" id="menubar" class="
+            font-semibold
+            
+            hidden
+            flex-col
+            gap-4
+            absolute
+            z-40
+            right-0
+            left-0
+            top-16
+            bg-amber-400
+            shadow-xl
+            text-center
+            text-lg
+            p-6 
+            items-center
+            lg:flex
+            lg:flex-row
+            lg:static
+            lg:shadow-none
+            lg:justify-between
+            lg:w-full
+            
+            ">
+                <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none ring-neutral-900
+ rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors lg:mr-auto"
+                    href="#">Home</a>
+                <a role="menuitem" class=" py-1 px-6 dark:text-neutral-900 focus:outline-none ring-neutral-900
+ rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors"
+                    href="#">Contact</a>
+                <a role="menuitem" class=" py-1 px-6 dark:text-neutral-900 focus:outline-none ring-neutral-900
+ rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors"
+                    href="#">Login</a>
+                <a role="menuitem" class=" py-2 px-6 bg-teal-900 text-white shadow-xl dark:text-neutral-900 focus:outline-none ring-neutral-900
+ rounded-xl hover:shadow-none transition-shadow ring-offset-4 ring-offset-amber-400 " href="#">Sign Up</a>
+            </div>
+            <!-- menubar list end  -->
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- header start -->
+    <header class="relative pt-16 sm:pt-24 lg:pt-48">
+        <div class="
+        absolute
+        inset-0
+        bottom-8
+        md:bottom-24
+        xl:bottom-32
+        -z-10
+        bg-gradient-to-b
+        from-amber-400
+        to-amber-600
+        "></div>
+        <div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+            <img class="
+            row-start-1
+            row-end-2
+            col-start-1
+            col-end-2
+            mx-auto
+            " src="./img/couch.png" alt="couch">
+            <img class="
+            row-start-1
+            row-end-2
+            col-start-1
+            col-end-2
+            mx-auto
+            w-40
+            sm:w-52
+            lg:w-64
+            xl:w-72
+            " src="./img/app.svg" alt="mobileImg">
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <!-- main section start -->
+    <main class="
+    grid 
+    gap-12
+    sm:gap-16
+    md:gap-24
+    lg:gap-32
+    px-8
+    overflow-hidden
+    ">
+        <a href="#" class="
+              
+        py-2
+        px-6
+        bg-amber-400
+        dark:text-neutral-900
+        mx-auto
+        rounded-lg
+        my-12
+        shadow-xl
+        hover:shadow-none
+        transition-shadow
+        focus:outline-none
+        focus-visible:ring-4
+        ring-neutral-900
+        ring-offset-4
+        ring-offset-amber-400
+
+        ">
+            <i class="ph ph-download-simple"></i>
+            <span>Download the App</span>
+        </a>
+
+        <!-- section one start -->
+        <section class="relative">
+            <img src="./img/dots.svg" class="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-24 xl:-left-7"
+                alt="img">
+            <img src="./img/dots.svg" class="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-24 xl:-right-7"
+                alt="img">
+            <h2 class="sr-only">Our Qualities</h2>
+            <div
+                class="container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between md:px-3">
+
+                <!-- item one -->
+                <div class="grid gap-4 justify-items-center text-center flex-1">
+                    <div class="p-4 border-8 border-amber-400 rounded-full ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14" width="96" height="96" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path d="M216,96V208a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8H208A8,8,0,0,1,216,96Z"
+                                opacity="0.2"></path>
+                            <path
+                                d="M208,80H176V56a48,48,0,0,0-96,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM96,56a32,32,0,0,1,64,0V80H96ZM208,208H48V96H208V208Zm-68-56a12,12,0,1,1-12-12A12,12,0,0,1,140,152Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold">Safe</h3>
+                    <p>Our products are secure and private out-of-the-box</p>
+                </div>
+
+                <!-- item two -->
+                <div class="grid gap-4 justify-items-center text-center flex-1">
+                    <div class="p-4 border-8 border-amber-400 rounded-full ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14" width="96" height="96" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path d="M96,240l16-80L48,136,160,16,144,96l64,24Z" opacity="0.2"></path>
+                            <path
+                                d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold">Efficient</h3>
+                    <p>Feel good about your wallet and the environment</p>
+                </div>
+
+                <!-- item three -->
+                <div class="grid gap-4 justify-items-center text-center flex-1">
+                    <div class="p-4 border-8 border-amber-400 rounded-full ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14" width="96" height="96" fill="#000000"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M232,128c0,12.51-17.82,21.95-22.68,33.69-4.68,11.32,1.42,30.65-7.78,39.85s-28.53,3.1-39.85,7.78C150,214.18,140.5,232,128,232s-22-17.82-33.69-22.68c-11.32-4.68-30.65,1.42-39.85-7.78s-3.1-28.53-7.78-39.85C41.82,150,24,140.5,24,128s17.82-22,22.68-33.69C51.36,83,45.26,63.66,54.46,54.46S83,51.36,94.31,46.68C106.05,41.82,115.5,24,128,24S150,41.82,161.69,46.68c11.32,4.68,30.65-1.42,39.85,7.78s3.1,28.53,7.78,39.85C214.18,106.05,232,115.5,232,128Z"
+                                opacity="0.2"></path>
+                            <path
+                                d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold">Proven</h3>
+                    <p>Leading the smart Home world for 10 years</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section one end -->
+
+
+        <!-- section two start -->
+
+        <section class="text-center grid gap-8 place-items-center">
+            <div class="grid gap-4">
+                <h2 id="partners" class="text-4xl text-amber-400 font-bold">Our Partners</h2>
+                <p class="w-full max-w-lg">We've partnered with hundreds of smart home brands to help you create home
+                    that fits your needs and doesn't lock you in.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-8 md:gap-x-16 max-w-2xl mx-auto">
+
+                <div class="p-4 bg-white dark:bg-neutral-900 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner1.svg" alt="partner_1" class="w-16 h-16">
+                </div>
+
+                <div class="p-4 bg-white dark:bg-neutral-900 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner2.svg" alt="partner_2" class="w-16 h-16">
+                </div>
+
+                <div class="p-4 bg-white dark:bg-neutral-900 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner3.svg" alt="partner_3" class="w-16 h-16">
+                </div>
+
+                <div class="p-4 bg-white dark:bg-neutral-900 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner4.svg" alt="partner_4" class="w-16 h-16">
+                </div>
+
+                <div class="p-4 bg-white dark:bg-neutral-900 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner5.svg" alt="partner_5" class="w-16 h-16">
+                </div>
+
+                <div class="p-4 bg-white dark:bg-neutral-900 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner6.svg" alt="partner_6" class="w-16 h-16">
+                </div>
+
+                <div class="p-4 bg-white dark:bg-neutral-900 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner7.svg" alt="partner_7" class="w-16 h-16">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- section two end -->
+
+        <!-- section three(Home) start -->
+        <section class="relative">
+            <div class="flex flex-wrap-reverse gap-8 justify-center">
+                <div class="flex flex-wrap gap-6 flex-col items-start lg:justify-center">
+                    <div class="flex flex-wrap gap-2 flex-col items-start">
+                        <h2 class="text-4xl font-bold">
+                            Relax, you're home!
+                        </h2>
+                        <p class="max-w-md">All our supported hardware includes traditional inputs so you can integrate
+                            our products into your house in a way that's best for everyone.</p>
+
+                    </div>
+                    <a href="#" class="
+              
+                    py-2
+                    px-6
+                    bg-amber-400
+                    dark:text-neutral-900
+                    
+                    rounded-lg
+                    shadow-xl
+                    hover:shadow-none
+                    transition-shadow
+                    focus:outline-none
+                    focus-visible:ring-4
+                    ring-neutral-900
+                    ring-offset-4
+                    ring-offset-amber-400
+            
+                    ">
+                        Sign Up
+                    </a>
+
+                </div>
+                <img src="./img/table.png" alt="table">
+            </div>
+            <div class="
+            absolute
+            -bottom-6
+            -right-32
+            -z-10
+            aspect-square
+            md:border-8
+            border-amber-400
+            rounded-full
+            md:w-64
+            lg:w-96
+            xl:max-w-lg
+            "></div>
+            <div class="
+            bg-teal-900 h-24 xl:h-48 -mx-8 mt-12 xl:mt-0 xl:absolute w-screen -bottom-8 -z-10"></div>
+        </section>
+        <!-- section three(Home) end -->
+    </main>
+    <!-- main section end -->
+
+    <!-- Form section start -->
+
+    <section class="container mx-auto px-8 overflow-hidden">
+        <div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20">
+            <div class="md:flex-1 md:max-w-sm relative">
+                <img src="./img/lamp.png" alt="lamp" class="mx-auto">
+                <a href="#" class="
+               w-max
+                py-2
+                px-6
+                bg-amber-400
+                dark:text-neutral-900
+                mx-auto
+                rounded-md
+                mt-12
+                md:mb-12
+                flex
+                gap-2
+                items-center
+                shadow-xl
+                hover:shadow-none
+                transition-shadow
+                focus:outline-none
+                focus-visible:ring-4
+                ring-neutral-900
+                ring-offset-4
+                ring-offset-amber-400
+        
+                ">
+                    <i class="ph ph-download-simple"></i>
+                    <span>Download the App</span>
+                </a>
+
+                <img src="./img/app.svg" width="240"
+                    class="hidden md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-16 xl:max-w-xs "
+                    alt="app">
+                <div class="absolute
+                    -bottom-18
+                    left-1/2
+                    -translate-x-1/2
+                    -z-10
+                    aspect-square
+                    md:border-8
+                    border-amber-400
+                    rounded-full
+                    md:w-72
+                    lg:w-96
+                    ">
+                </div>
+            </div>
+            <form action="" class="relative border-4 border-neutral-900 
+            p-6 
+            rounded-md
+            grid
+            gap-8
+            md:flex-1
+            md:max-w-lg 
+            my-4
+            md:my-12
+            lg:my-16
+            bg-white
+            dark:bg-neutral-900
+            w-full
+            ">
+
+                <h2 class="text-3xl font-bold">Let's Connect</h2>
+
+                <div class="relative">
+                    <input type="text" id="name" class="
+                    peer
+                    form-input
+                    w-full
+                    border-4
+                    border-amber-400
+                    rounded-sm
+                    focus:ring-none
+                    
+                    focus:ring-offset-2
+                    focus:ring-amber-400
+                    focus:border-amber-400
+                    focus:outline-none
+                    dark:bg-amber-400
+                    dark:text-neutral-900
+                    placeholder-transparent
+                    " placeholder="Your Name">
+                    <label for="name" class="
+                    text-neutral-900
+                    text-sm
+                    font-bold
+                    uppercase
+                    absolute
+                    -top-4
+                    left-2
+                    -translate-y-1/2
+                    transition-all
+                    peer-placeholder-shown:left-4
+                    peer-placeholder-shown:top-1/2
+                    peer-placeholder-shown:text-neutral-900
+                    peer-focus:-top-4
+                    peer-focus:left-2
+                    peer-focus:text-neutral-600
+                    dark:peer-focus:text-neutral-300
+                    ">your name</label>
+
+
+
+                </div>
+
+                <div class="relative">
+                    <input type="email" id="email" class="
+                    peer
+                    form-input
+                    w-full
+                    border-4
+                    border-amber-400
+                    rounded-sm
+                    focus:ring-none
+                    
+                    focus:ring-offset-2
+                    focus:ring-amber-400
+                    focus:border-amber-400
+                    focus:outline-none
+                    dark:bg-amber-400
+                    dark:text-neutral-900
+                    placeholder-transparent
+                    " placeholder="Your Email">
+                    <label for="email" class="
+                    text-neutral-900
+                    text-sm
+                    font-bold
+                    uppercase
+                    absolute
+                    -top-4
+                    left-2
+                    -translate-y-1/2
+                    transition-all
+                    peer-placeholder-shown:left-4
+                    peer-placeholder-shown:top-1/2
+                    peer-placeholder-shown:text-neutral-900
+                    peer-focus:-top-4
+                    peer-focus:left-2
+                    peer-focus:text-neutral-600
+                    dark:peer-focus:text-neutral-300
+                    ">your email</label>
+
+                </div>
+
+                <div class="relative">
+                    <textarea name="content" id="" class="
+                peer
+                form-textarea
+                resize-none
+                w-full
+                border-4
+                border-amber-400
+                rounded-sm
+                focus:ring-none
+                
+                focus:ring-offset-2
+                focus:ring-amber-400
+                focus:border-amber-400
+                focus:outline-none
+                dark:bg-amber-400
+                dark:text-neutral-900
+                placeholder-transparent
+
+                " cols="30" rows="10" placeholder="How can we help?"></textarea>
+                    <label for="content" class="
+                text-neutral-900
+                    text-sm
+                    font-bold
+                    uppercase
+                    absolute
+                    -top-4
+                    left-2
+                    -translate-y-1/2
+                    transition-all
+                    peer-placeholder-shown:left-4
+                    peer-placeholder-shown:top-6
+                    peer-placeholder-shown:text-neutral-900
+                    peer-focus:-top-4
+                    peer-focus:left-2
+                    peer-focus:text-neutral-600
+                    dark:peer-focus:text-neutral-300
+                ">How can we help?</label>
+                </div>
+
+                <a role="menuitem" class="
+                py-2
+                px-6
+                bg-neutral-900
+                text-white
+                w-max
+                shadow-xl
+                hover:shadow-none
+                transition-shadow
+                focus:outline-none
+                focus-visible:ring-4
+                ring-neutral-900
+                rounded-md
+                ring-offset-4
+                ring-offset-white
+                dark:ring-offset-amber-400
+              " href="#">
+                    Sign Up
+                </a>
+
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Form section end -->
+
+
+</body>
+
+</html>
